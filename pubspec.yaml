@@ -1,4 +1,8 @@
 name: ex08
-description: A sample command-line application
-#dev_dependencies:
-#  unittest: any
+author: |-
+  Catalina Vial Moscote
+  1221vial@gmail.com
+description: Exercice 8 - Cours SIO-2109- Université Laval - Automne 2014
+dependencies:
+  dartlero:
+    git: git://github.com/dzenanr/dartlero.git

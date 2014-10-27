@@ -14,10 +14,8 @@ List sortMembers (List associationList,String associationToSort){
       valueToReturn= i.current["members"];
     }
   }
-  
   return valueToReturn;
 }
-
 // Function that compares two maps by fisrt name and then by last name used to sort the list of names
 int compareAB ( a, b){
   if (a["lastName"]==b["lastName"])
@@ -26,8 +24,6 @@ int compareAB ( a, b){
     return a["lastName"].compareTo(b["lastName"]);
   
 }
-
-
 // Search all members on all associations whom last name starts by a given letter
 List searchMemebersWithLetter(List associationList,String startsLetter ){
   var valueToReturn= new List();  
@@ -40,6 +36,10 @@ List searchMemebersWithLetter(List associationList,String startsLetter ){
            valueToReturn.add(k.current);              // member is added to the list to be returned
        }
      }
-   
    return valueToReturn;
 }
+
+
+
+
+
