@@ -5,7 +5,7 @@ library lib_8_1;
 // An association is map  where the value of the key = {"name": value, "description":value, "members": values[ ] } 
 // Where "members" key value is a list [ ] of members (map)
 
-List sortMembers (List associationList,String associationToSort){
+List sortMembers(List associationList, String associationToSort){
   var valueToReturn= new List();  
   Iterator i=associationList.iterator;
   while(i.moveNext()){
@@ -16,16 +16,18 @@ List sortMembers (List associationList,String associationToSort){
   }
   return valueToReturn;
 }
+
 // Function that compares two maps by fisrt name and then by last name used to sort the list of names
-int compareAB ( a, b){
+int compareAB(a, b) {
   if (a["lastName"]==b["lastName"])
     return a["firstName"].compareTo(b["firstName"]);
   else
     return a["lastName"].compareTo(b["lastName"]);
   
 }
+
 // Search all members on all associations whom last name starts by a given letter
-List searchMemebersWithLetter(List associationList,String startsLetter ){
+List searchMemebersWithLetter(List associationList, String startsLetter ){
   var valueToReturn= new List();  
    Iterator i=associationList.iterator;               // used to iterates each association
    Iterator k=null;

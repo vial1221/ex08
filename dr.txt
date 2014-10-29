@@ -1,0 +1,17 @@
+ex08
+
+15/20
+
+-2
+projet mis à jour plusieurs jours après la date limite
+
+8.1
+OK
+
+8.2
+Dartlero has add and remove methods for entities.
+-1
+associationsList.internalList[0].memberships.add(new Membership(associationsList.internalList[0],'Information Systems', new Member( "Dzenan",  "Ridjanovic", "dr@gmail.com")));
+
+-2
+Maintain the model by providing additions, removals and updates of entities. 
