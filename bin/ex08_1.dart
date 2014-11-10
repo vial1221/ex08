@@ -1,6 +1,7 @@
 import 'package:ex08/lib_8_1.dart';
 import 'package:ex08/association_member.dart';
 
+
 void printListAssociations(List toPrint){
   Iterator i=toPrint.iterator;
   while(i.moveNext()){
@@ -51,10 +52,10 @@ void Q2(){
   
   var associationsList=new Associations();
   
+  associationsList.add(new Association()); // function add from dartlero
   associationsList.add(new Association());
   associationsList.add(new Association());
-  associationsList.add(new Association());
-  
+  // modify association informations
   associationsList.internalList[0].name='IS';
   associationsList.internalList[0].description='Information Systems';
   associationsList.internalList[0].memberships.add(new Membership(associationsList.internalList[0],'Information Systems', new Member( "Dzenan",  "Ridjanovic", "dr@gmail.com")));
@@ -84,10 +85,16 @@ void Q2(){
   
   print(associationsList);
   
-  //associationsList.internalList[0].memberships.internalList.sort();
  
   print('IS Association memberships sorted:\n');
   print(associationsList.internalList[0]);
+  
+  associationsList.remove(associationsList.internalList[1]);
+  print('CS association removed:\n');
+  print(associationsList);
+  
+    
+
 }
 
 // Exercice 8.2
