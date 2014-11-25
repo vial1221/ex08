@@ -1,5 +1,27 @@
 ex08
 
+18/20
+
+8.2
+Dartlero has add and remove methods for entities.
+-1
+associationsList.internalList[0].memberships.add(new Membership(associationsList.internalList[0],'Information Systems', new Member( "Dzenan",  "Ridjanovic", "dr@gmail.com")));
+associationsList
+-->
+associations
+associations = new Associations(...);
+association = new Association(...);
+associations.add(association);
+membership = new Memebrship(...);
+association.meberships.add(membership);
+see tests in https://github.com/dzenanr/association
+
+-1
+Maintain the model by providing additions, removals and updates of members and
+associations. 
+
+---
+
 15/20
 
 -2
